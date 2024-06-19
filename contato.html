@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.A. Sneakers</title>
+    <link rel="icon" href="img/LOGO-EM-BRANCO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="img/LOGO-EM-BRANCO.png" alt="logo" class="cont1">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="eventos.html">Sobre a RA SNEAKERS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </div>   
+    </header>
+    <div class="middle">
+        <div class="form">
+            <form>
+                <p>
+                    Nome:
+                    <input type="text" placeholder="Insira seu nome por favor">
+                </p>
+
+                <p>
+                    Sobrenome:
+                    <input type="text" placeholder="Insira seu sobrenome por favor">
+                </p>
+
+                <p>
+                    Email:
+                    <input type="mail" placeholder="Insira o Email">
+                </p>
+
+                <p>
+                    CPF:
+                    <input type="text" placeholder="Insira o CPF">
+                </p>
+
+                <p>
+                    Motivo do Contato:
+                    <input type="text" placeholder="Insira o Motivo do Contato">
+                </p>
+
+                <p>
+                    Insira o que deseja falar aqui!:
+                    <input type="text" placeholder="Insira o que quer falar conosco">
+                </p>
+
+                <p>
+                    <input type="reset">
+                    <button type="button" onclick="Evento()"> Enviar </button>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script>
+        function Evento() {
+            alert('Contato Enviado com Sucesso!!')
+        }
+    </script>
+</body>
+
+</html>
