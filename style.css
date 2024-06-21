@@ -3,6 +3,7 @@ body {
     padding: 0;
     background: linear-gradient(90deg, #929292 0%, #929292 100%);
     padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .cont1 {
@@ -12,7 +13,8 @@ body {
 }
 
 .imgcomp {
-    align-items: center;
+    display: block;
+    margin: 0 auto;
     height: auto;
     max-width: 100%;
     border: 0.06rem solid;
@@ -20,6 +22,8 @@ body {
 }
 
 .imgquad {
+    display: block;
+    margin: 0 auto;
     height: auto;
     max-width: 100%;
     width: 21.87rem;
@@ -29,19 +33,20 @@ body {
 }
 
 header {
-    margin: 0 -1rem;
     padding: 0.5rem 1rem;
     width: 100%;
     height: 3.5rem;
     background-color: #000000;
+    box-sizing: border-box;
 }
 
-/* Inicio dos códigos para a Navbar das páginas */
+/* Navbar */
 .navbar {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
-    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar li {
@@ -80,7 +85,7 @@ nav a {
     padding: 0.5rem;
     text-decoration: none;
 }
-/* Fim dos códigos para Navbar */
+/* Fim Navbar */
 
 footer {
     border-color: black;
@@ -91,8 +96,9 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-top: -10rem;
-    margin-bottom: -10rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-sizing: border-box;
 }
 
 header img {
@@ -108,30 +114,26 @@ header img {
     max-width: 11rem;
     text-align: center;
     text-transform: uppercase;
+    margin: 1rem auto;
 }
 
 .cards {
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
     gap: 1.25rem;
-    margin-top: -5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
-    
 }
 
 .newsletter-form input {
     border: 2px solid;
     border-radius: 1px;
     font-size: 1rem;
-    gap: 1rem;
     margin: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
     width: 100%;
     max-width: 20rem;
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 40rem) {
@@ -195,6 +197,8 @@ header img {
     padding: 2rem;
     border: 0.1rem solid #000000;
     border-radius: 1rem;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .middle {
@@ -204,14 +208,26 @@ header img {
     align-items: center;
     gap: 2rem;
     padding: 5rem 0 8rem;
+    box-sizing: border-box;
 }
 
-.imgcomp1{
-    width: 1080px;
-    height: 400px;
-    width: 400px;
-    border: 1px;
-    border-radius: 5px; /*Arrendodamento das bordas*/
+.imgcompesp{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    width: 21.87rem;
+    border: 0.06rem solid;
+    border-radius: 0.3rem; 
+    justify-content: center;
+}
+
+.imgcomp1 {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 .container-modelos {
@@ -244,18 +260,22 @@ header img {
 
 .h2 {
     margin-top: 6rem;
-    margin-bottom: -2rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .sobre-nos {
-    line-height: 1rem;
+    line-height: 1.5rem;
     text-align: justify;
+    padding: 0 1rem;
 }
 
 .midia {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .midia img {
